@@ -8,11 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvinput"
         android:layout_width="377dp"
         android:layout_height="190dp"
         android:background="@drawable/bg_et"
-        android:text="TextView"
+        android:textColor="@color/black"
+        android:padding="10sp"
+        android:gravity="bottom|right"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -38,18 +41,26 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
             android:height="100dp"
             android:backgroundTint="#020202"
+
+            android:onClick="digit"
             android:text="1"
             android:textColor="#FFC900"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            app:cornerRadius="10dp" />
 
         <Button
 
             android:id="@+id/button2"
+            android:onClick="digit"
+
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
             android:height="100dp"
             android:backgroundTint="#020202"
@@ -59,10 +70,13 @@
 
         <Button
             android:id="@+id/button3"
+            android:onClick="digit"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="3"
@@ -72,8 +86,10 @@
         <Button
             android:id="@+id/buttonplus"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
             android:height="100dp"
             android:backgroundTint="#020202"
@@ -99,21 +115,27 @@
         <Button
             android:id="@+id/button4"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="4"
+            android:onClick="digit"
+            android:layout_margin="2dp"
             android:textColor="#FFC900"
             android:textSize="40sp" />
 
         <Button
+            android:onClick="digit"
             android:id="@+id/button5"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="5"
@@ -122,15 +144,18 @@
 
         <Button
             android:id="@+id/button6"
+            android:onClick="digit"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="6"
             android:textColor="#FFC900"
-            android:textSize="40sp" />
+            android:textSize="40sp"/>
 
         <Button
             android:id="@+id/buttonminus"
@@ -138,11 +163,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:cornerRadius="10dp"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="-"
             android:textColor="#FFFFFF"
-            android:textSize="40sp" />
+            android:textSize="40sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -162,10 +189,13 @@
 
         <Button
             android:id="@+id/button7"
+            android:onClick="digit"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="7"
@@ -174,7 +204,9 @@
 
         <Button
             android:id="@+id/button8"
-
+            android:layout_margin="2dp"
+            android:onClick="digit"
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -186,11 +218,13 @@
 
         <Button
             android:id="@+id/button9"
-
+            android:layout_margin="2dp"
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:height="100dp"
+            android:onClick="digit"
             android:backgroundTint="#020202"
             android:text="9"
             android:textColor="#FFC900"
@@ -198,6 +232,8 @@
 
         <Button
             android:id="@+id/buttonmult"
+            android:layout_margin="2dp"
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -227,34 +263,40 @@
 
         <Button
             android:id="@+id/button0"
-
+            app:cornerRadius="10dp"
+            android:onClick="digit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:height="100dp"
+            android:layout_margin="2dp"
             android:backgroundTint="#020202"
             android:text="0"
             android:textColor="#FFC900"
             android:textSize="40sp" />
 
         <Button
-            android:id="@+id/buttondot"
-
+            android:id="@+id/buttonclr"
+            android:layout_margin="2dp"
+            android:onClick="clear"
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:height="100dp"
             android:backgroundTint="#020202"
-            android:text="."
+            android:text="CA"
             android:textColor="#FFFFFF"
             android:textSize="40sp" />
 
         <Button
             android:id="@+id/buttondiv"
 
+            app:cornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:height="100dp"
             android:backgroundTint="#020202"
             android:text="/"
@@ -265,6 +307,8 @@
 
     <Button
         android:id="@+id/buttoneq"
+
+        app:cornerRadius="10dp"
         android:layout_width="225dp"
         android:layout_height="77dp"
         android:height="100dp"
@@ -272,7 +316,6 @@
         android:text="="
         android:textColor="#FDFDFC"
         android:textSize="30sp"
-        app:cornerRadius="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
