@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Calculator/app/src/main/res/drawable/bg_et.xml" value="0.2128205128205128" />
         <entry key="..\:/Calculator/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Calculator/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2128205128205128" />
