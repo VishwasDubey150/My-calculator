@@ -8,8 +8,6 @@ import android.view.Window
 import android.widget.Button
 import android.widget.TextView
 
-// null to remove nullable exceptions
-
 private var tvinput: TextView? = null
 var lastNumeric: Boolean = false
 
@@ -20,16 +18,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
         tvinput=findViewById(R.id.tvinput)
-
     }
+
     fun digit(view: android.view.View) {
         tvinput?.append((view as Button).text)
         lastNumeric=true
     }
+
     fun clear(view: android.view.View) {
         tvinput?.text=""
         lastNumeric=false
     }
+
     fun onoperators(view: View) {
         tvinput?.text?.let {
             if(lastNumeric && !isoperatoradded(it.toString()))
